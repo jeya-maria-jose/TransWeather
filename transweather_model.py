@@ -815,7 +815,7 @@ class Transweather(nn.Module):
         
         self.Tdec = Tdec()
         
-        self.convproj = convprojection()
+        self.convtail = convprojection()
 
         self.clean = ConvLayer(8, 3, kernel_size=3, stride=1, padding=1)
 
@@ -830,7 +830,7 @@ class Transweather(nn.Module):
 
         x2 = self.Tdec(x1)
 
-        x = self.convproj(x1,x2)
+        x = self.convtail(x1,x2)
 
         clean = self.active(self.clean(x))
 
