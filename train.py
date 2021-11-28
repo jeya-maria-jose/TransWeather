@@ -115,7 +115,7 @@ val_filename1 = 'raindroptesta.txt'
 lbl_train_data_loader = DataLoader(TrainData(crop_size, train_data_dir,labeled_name), batch_size=train_batch_size, shuffle=True, num_workers=8)
 
 ## Uncomment the other validation data loader to keep an eye on performance 
-## but note that validating while training significantly increases the test time 
+## but note that validating while training significantly increases the train time 
 
 # val_data_loader = DataLoader(ValData(val_data_dir,val_filename), batch_size=val_batch_size, shuffle=False, num_workers=8)
 val_data_loader1 = DataLoader(ValData(val_data_dir,val_filename1), batch_size=val_batch_size, shuffle=False, num_workers=8)
