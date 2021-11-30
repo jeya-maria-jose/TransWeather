@@ -726,19 +726,19 @@ class convprojection_base(nn.Module):
 
     def forward(self,x1):
 
-        if x1[3].shape[3] != res32x.shape[3] and x1[3].shape[2] != res32x.shape[2]:
-            p2d = (0,-1,0,-1)
-            res32x = F.pad(res32x,p2d,"constant",0)
+#         if x1[3].shape[3] != res32x.shape[3] and x1[3].shape[2] != res32x.shape[2]:
+#             p2d = (0,-1,0,-1)
+#             res32x = F.pad(res32x,p2d,"constant",0)
             
-        elif x1[3].shape[3] != res32x.shape[3] and x1[3].shape[2] == res32x.shape[2]:
-            p2d = (0,-1,0,0)
-            res32x = F.pad(res32x,p2d,"constant",0)
-        elif x1[3].shape[3] == res32x.shape[3] and x1[3].shape[2] != res32x.shape[2]:
-            p2d = (0,0,0,-1)
-            res32x = F.pad(res32x,p2d,"constant",0)
+#         elif x1[3].shape[3] != res32x.shape[3] and x1[3].shape[2] == res32x.shape[2]:
+#             p2d = (0,-1,0,0)
+#             res32x = F.pad(res32x,p2d,"constant",0)
+#         elif x1[3].shape[3] == res32x.shape[3] and x1[3].shape[2] != res32x.shape[2]:
+#             p2d = (0,0,0,-1)
+#             res32x = F.pad(res32x,p2d,"constant",0)
 
-        res16x = res32x + x1[3]
-        res16x = self.convd16x(res16x) 
+#         res16x = res32x + x1[3]
+        res16x = self.convd16x(x1[3]) 
 
         if x1[2].shape[3] != res16x.shape[3] and x1[2].shape[2] != res16x.shape[2]:
             p2d = (0,-1,0,-1)
