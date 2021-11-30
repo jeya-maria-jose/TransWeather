@@ -1,10 +1,10 @@
 # TransWeather
 
- <a href="https://arxiv.org/abs/"> </a> 
+ <a href="https://arxiv.org/abs/2111.14813"> </a> 
 
-Official Code for the paper [TransWeather](https://arxiv.org/pdf/), Arxiv Tech Report 2021
+Official Code for the paper [TransWeather: Transformer-based Restoration of Images Degraded by Adverse Weather Conditions](https://arxiv.org/abs/2111.14813), Arxiv Tech Report 2021
 
-[Paper](https://arxiv.org/pdf/) | [Website](https://jeya-maria-jose.github.io/transweather-web/)
+[Paper](https://arxiv.org/abs/2111.14813) | [Website](https://jeya-maria-jose.github.io/transweather-web/)
 
 ### About this repo:
 
@@ -135,4 +135,13 @@ This code-base uses certain code-blocks and helper functions from [Syn2Real](htt
 
 ### Citation:
 
-
+```
+@misc{valanarasu2021transweather,
+      title={TransWeather: Transformer-based Restoration of Images Degraded by Adverse Weather Conditions}, 
+      author={Jeya Maria Jose Valanarasu and Rajeev Yasarla and Vishal M. Patel},
+      year={2021},
+      eprint={2111.14813},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV}
+}
+```
