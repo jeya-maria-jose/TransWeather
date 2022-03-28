@@ -8,7 +8,7 @@ Official Code for the paper [TransWeather: Transformer-based Restoration of Imag
 
 ### About this repo:
 
-This repo hosts the implentation code, pre-trained weights, and dataset preparation details for the paper "TransWeather". We also provide code for a strong transformer baseline for weather removal tasks.
+This repo hosts the implentation code for the paper "TransWeather". We also provide code for a strong transformer baseline for weather removal tasks.
 
 ## Introduction
 
@@ -52,15 +52,6 @@ opencv-python==4.5.1.48
 
 TransWeather is trained on a combination of images sampled from Outdoor-Rain, Snow100K, and Raindrop datasets (similar to [All-in-One (CVPR 2020)](https://openaccess.thecvf.com/content_CVPR_2020/papers/Li_All_in_One_Bad_Weather_Removal_Using_Architectural_Search_CVPR_2020_paper.pdf)), dubbed as "All-Weather", containing 18069 images. It can be downloaded from this [link](https://drive.google.com/file/d/1tfeBnjZX1wIhIFPl6HOzzOKOyo0GdGHl/view?usp=sharing).
 
-### Test Data:
-
-RainDrop Test : [Link](https://drive.google.com/open?id=1e7R76s6vwUJxILOcAsthgDLPSnOrQ49K) (Note that Test A is used for quantitative evaluation across all papers in the community, Test B is used for additional qualitative analysis)
-
-Snow100K Test : [Link](https://sites.google.com/view/yunfuliu/desnownet) (We use the Snow100K-L distribution for testing)
-
-Test1 (validation set of "Outdoor-Rain") : [Link](https://drive.google.com/file/d/1pd90tVF326s1JllhuUEKiATyFa3aPjzH/view?usp=sharing)
-
-Real World Images : [Link](https://github.com/lsy17096535/Single-Image-Deraining)
 
 ### Dataset format:
 
@@ -84,12 +75,6 @@ Download the datasets and arrange them in the following format. T
 
 [Link](https://drive.google.com/file/d/1UsazX-P3sPcDGw3kxkyFWqUyNfhYN_AM/view?usp=sharing)
 
-## Pre-Trained Model
-
-TransWeather Weights - [Link](https://drive.google.com/file/d/1CKUvvjja6cm97Y8JV6Q9c8VccN_-rjB4/view?usp=sharing)
-
-
-Place the folder in the root directory.
 
 ## Evaluation Code:
 
