@@ -18,6 +18,10 @@ Removing adverse weather conditions like rain, fog, and snow from images is an i
   <img src="imgs/Transweather.png" width="800"/>
 </p>
 
+## News [Update]:
+
+A change in the PSNR values are observed as the calulation is done before saving the image which is not adept with previous works. However, we still get a better performance in most datasets (27.96 vs All-in-One's 24.71). It can also be noted that the TransWeather model can be further finetuned to get a better performance on individual datasets.
+
 ## Using the code:
 
 The code is stable while using Python 3.6.13, CUDA >=10.1
