@@ -20,7 +20,7 @@ Removing adverse weather conditions like rain, fog, and snow from images is an i
 
 ## News [Update]:
 
-A change in the PSNR values are observed as the calulation is done before saving the image which is not adept with previous works. However, we still get a better performance in most datasets (27.96 vs All-in-One's 24.71). It can also be noted that the TransWeather model can be further finetuned to get a better performance on individual datasets.
+A change in the PSNR values are observed as the calulation is done before saving the image which is not adept with previous works. However, we still get a better performance in most datasets (27.96 vs All-in-One's 24.71). It can also be noted that the TransWeather model can be further finetuned to get a better performance on individual datasets. These updates will be reflected on the new arxiv version.
 
 ## Using the code:
 
