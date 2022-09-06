@@ -2,7 +2,9 @@
 
  <a href="https://arxiv.org/abs/2111.14813"> </a> 
 
-Official Code for the paper [TransWeather: Transformer-based Restoration of Images Degraded by Adverse Weather Conditions](https://arxiv.org/abs/2111.14813), CVPR 2022
+Code for the paper [TransWeather: Transformer-based Restoration of Images Degraded by Adverse Weather Conditions](https://arxiv.org/abs/2111.14813), CVPR 2022
+
+Note: This code base is still not complete. The Transweather model can be found in this code-base. Please feel free to take the model file and run it with your train/eval. Train and Eval scripts for this code-base will be updated later when I have time. Sorry for the incovenience.
 
 [Paper](https://arxiv.org/abs/2111.14813) | [Website](https://jeya-maria-jose.github.io/transweather-web/)
 
