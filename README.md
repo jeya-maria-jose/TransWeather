@@ -82,34 +82,6 @@ Download the datasets and arrange them in the following format. T
 [Link](https://drive.google.com/file/d/1UsazX-P3sPcDGw3kxkyFWqUyNfhYN_AM/view?usp=sharing)
 
 
-## Evaluation Code:
-
-
-To run the evaluation for specific test datasets, run the following commands:
-
-```   
-python test_snow100k.py -exp_name TransWeather_weights
-```
-
-```   
-python test_test1.py -exp_name TransWeather_weights
-```
-
-```   
-python test_raindropa.py -exp_name TransWeather_weights
-```
-
-These scripts will calculate the performance metrics as well as save the predictions in the results folder.
-
-
-## Training the network:
-
-To train the network on All-weather dataset, run the following command:
-
-```
-python train.py  -train_batch_size 32 -exp_name Transweather -epoch_start 0 -num_epochs 250
-```
-
 ## Extensions:
 
 Note that Transweather is built to solve all adverse weather problem with a single model. We observe that, additionally TransWeather can be easilty modified (removing the transformer decoder) to just focus on an individual restoration task. To train just the Transweather-encoder on other datasets (like Rain-800), organize the dataset similar to all-weather and run the following command: 
